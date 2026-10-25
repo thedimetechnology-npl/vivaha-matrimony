@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Vivaha — Premium Indian Matrimony</title>
+  <meta name="description" content="Vivaha — India's most trusted premium matrimony platform. Verified profiles, astrological matching, family-involved matchmaking. Built on Indian traditions.">
+  <meta name="theme-color" content="#8B6914">
+  <meta name="color-scheme" content="light">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Vivaha">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app" id="app">
+    <!-- ======================= HEADER ======================= -->
+    <header class="header" role="banner">
+      <div class="header-inner">
+        <a href="#home" class="logo" aria-label="Vivaha - Home">
+          <svg class="logo-mark" viewBox="0 0 48 48" width="40" height="40" aria-hidden="true">
+            <defs>
+              <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#D4A843"/>
+                <stop offset="50%" stop-color="#C8962E"/>
+                <stop offset="100%" stop-color="#B8860B"/>
+              </linearGradient>
+            </defs>
+            <circle cx="24" cy="24" r="22" fill="url(#logoGrad)" opacity="0.15"/>
+            <path fill="none" stroke="url(#logoGrad)" stroke-width="2.5" stroke-linecap="round" d="M14 24c0-6.6 5.4-12 12-12s12 5.4 12 12"/>
+            <path fill="none" stroke="url(#logoGrad)" stroke-width="2" stroke-linecap="round" d="M24 14v10M24 34v-10"/>
+            <ellipse cx="24" cy="24" rx="8" ry="5" fill="none" stroke="url(#logoGrad)" stroke-width="1.5"/>
+            <circle cx="24" cy="24" r="3" fill="url(#logoGrad)"/>
+          </svg>
+          <span class="logo-text">Vivaha</span>
+          <span class="logo-tagline">विवाह</span>
+        </a>
+
+        <nav class="nav-main" aria-label="Main navigation">
+          <a href="#home" class="nav-link active" data-nav="home">Home</a>
+          <a href="#search" class="nav-link" data-nav="search">Find Matches</a>
+          <a href="#register" class="nav-link" data-nav="register">Register Free</a>
+          <a href="#services" class="nav-link" data-nav="services">Services</a>
+          <a href="#guidelines" class="nav-link" data-nav="guidelines">Guidelines</a>
+          <a href="#success" class="nav-link" data-nav="success">Success Stories</a>
+          <a href="#contact" class="nav-link" data-nav="contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <a href="#login" class="btn btn-ghost" data-nav="login">Log In</a>
+          <a href="#register" class="btn btn-primary" data-nav="register">Create Profile</a>
+        </div>
+
+        <button class="nav-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
+          <span class="hamburger"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobile-menu" role="navigation" aria-label="Mobile menu" hidden>
+        <a href="#home" class="mobile-nav-link" data-nav="home">Home</a>
+        <a href="#search" class="mobile-nav-link" data-nav="search">Find Matches</a>
+        <a href="#register" class="mobile-nav-link" data-nav="register">Register Free</a>
+        <a href="#services" class="mobile-nav-link" data-nav="services">Services</a>
+        <a href="#guidelines" class="mobile-nav-link" data-nav="guidelines">Guidelines</a>
+        <a href="#success" class="mobile-nav-link" data-nav="success">Success Stories</a>
+        <a href="#contact" class="mobile-nav-link" data-nav="contact">Contact</a>
+        <div class="mobile-menu-actions">
+          <a href="#login" class="btn btn-ghost btn-block" data-nav="login">Log In</a>
+          <a href="#register" class="btn btn-primary btn-block" data-nav="register">Create Profile</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ======================= HERO ======================= -->
+    <main id="main">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-bg" aria-hidden="true">
+          <div class="hero-pattern"></div>
+          <div class="hero-gradient"></div>
+        </div>
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>India's Most Trusted Premium Matrimony</span>
+          </div>
+          <h1 id="hero-title" class="hero-title">
+            Find Your Life Partner<br>
+            <span class="hero-title-accent">The Traditional Way</span>
+          </h1>
+          <p class="hero-subtitle">
+            Vivaha brings together verified profiles, astrological compatibility, 
+            and family-involved matchmaking — rooted in Indian values, designed for modern lives.
+          </p>
+          <div class="hero-stats" role="list" aria-label="Platform statistics">
+            <div class="stat-item" role="listitem">
+              <strong class="stat-number" data-count="125000">0</strong>
+              <span class="stat-label">Verified Profiles</span>
+            </div>
+            <div class="stat-item" role="listitem">
+              <strong class="stat-number" data-count="45000">0</strong>
+              <span class="stat-label">Successful Matches</span>
+            </div>
+            <div class="stat-item" role="listitem">
+              <strong class="stat-number" data-count="28">0</strong>
+              <span class="stat-label">States Covered</span>
+            </div>
+            <div class="stat-item" role="listitem">
+              <strong class="stat-number" data-count="15">0</strong>
+              <span class="stat-label">Years of Trust</span>
+            </div>
+          </div>
+          <div class="hero-cta">
+            <a href="#register" class="btn btn-primary btn-lg" data-nav="register">Create Free Profile</a>
+            <a href="#search" class="btn btn-outline btn-lg" data-nav="search">Browse Profiles</a>
+          </div>
+          <div class="hero-trust">
+            <span class="trust-item">✓ Aadhaar Verified</span>
+            <span class="trust-item">✓ Kundali Matching</span>
+            <span class="trust-item">✓ Family Dashboard</span>
+            <span class="trust-item">✓ Privacy First</span>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-card hero-card-1">
+            <div class="card-ring"></div>
+            <div class="card-content">
+              <div class="card-avatar"></div>
+              <div class="card-info">
+                <h4>Priya Sharma</h4>
+                <p>28 • Delhi • Software Engineer</p>
+                <span class="card-badge">✓ Verified</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-card hero-card-2">
+            <div class="card-ring"></div>
+            <div class="card-content">
+              <div class="card-avatar"></div>
+              <div class="card-info">
+                <h4>Rajesh Patel</h4>
+                <p>30 • Mumbai • Doctor</p>
+                <span class="card-badge">✓ Verified</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-mandala" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <!-- ======================= QUICK SEARCH ======================= -->
+      <section class="quick-search" id="search" aria-labelledby="search-title">
+        <div class="container">
+          <header class="section-header">
+            <h2 id="search-title" class="section-title">Find Your Match</h2>
+            <p class="section-subtitle">Search verified profiles by your preferences</p>
+          </header>
+          <form class="search-form" id="searchForm" role="search">
+            <div class="search-row">
+              <div class="form-group">
+                <label for="searchGender">I am a</label>
+                <select id="searchGender" name="gender" required>
+                  <option value="">Select</option>
+                  <option value="bride">Bride</option>
+                  <option value="groom">Groom</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="searchAge">Age</label>
+                <select id="searchAge" name="age" required>
+                  <option value="">Select</option>
+                  <option value="18-22">18-22</option>
+                  <option value="23-26">23-26</option>
+                  <option value="27-30">27-30</option>
+                  <option value="31-35">31-35</option>
+                  <option value="36-40">36-40</option>
+                  <option value="41-45">41-45</option>
+                  <option value="46-50">46-50</option>
+                  <option value="50+">50+</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="searchReligion">Religion</label>
+                <select id="searchReligion" name="religion">
+                  <option value="">All Religions</option>
+                  <option value="hindu">Hindu</option>
+                  <option value="muslim">Muslim</option>
+                  <option value="christian">Christian</option>
+                  <option value="sikh">Sikh</option>
+                  <option value="jain">Jain</option>
+                  <option value="buddhist">Buddhist</option>
+                  <option value="interfaith">Interfaith Welcome</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="searchCaste">Caste / Community</label>
+                <select id="searchCaste" name="caste">
+                  <option value="">All Communities</option>
+                  <option value="brahmin">Brahmin</option>
+                  <option value="kshatriya">Kshatriya</option>
+                  <option value="vaishya">Vaishya</option>
+                  <option value="shudra">Shudra</option>
+                  <option value="obc">OBC</option>
+                  <option value="sc-st">SC/ST</option>
+                  <option value="no-bar">No Caste Bar</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="searchLocation">Location</label>
+                <select id="searchLocation" name="location">
+                  <option value="">Any Location</option>
+                  <option value="delhi">Delhi NCR</option>
+                  <option value="mumbai">Mumbai</option>
+                  <option value="bangalore">Bangalore</option>
+                  <option value="chennai">Chennai</option>
+                  <option value="hyderabad">Hyderabad</option>
+                  <option value="pune">Pune</option>
+                  <option value="kolkata">Kolkata</option>
+                  <option value="ahmedabad">Ahmedabad</option>
+                  <option value="other">Other Cities</option>
+                  <option value="nri">NRI / Abroad</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg search-submit">
+              <span>Search Profiles</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- ======================= FEATURES ======================= -->
+      <section class="features" aria-labelledby="features-title">
+        <div class="container">
+          <header class="section-header">
+            <h2 id="features-title" class="section-title">Why Choose Vivaha</h2>
+            <p class="section-subtitle">Rooted in tradition, built for trust</p>
+          </header>
+          <div class="features-grid">
+            <article class="feature-card">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <h3>Aadhaar Verified Profiles</h3>
+              <p>Every profile undergoes Aadhaar + PAN verification. 3-step identity check ensures authentic connections.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2v20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+              </div>
+              <h3>Kundali & Guna Matching</h3>
+              <p>Traditional 36-guna matching with detailed planetary positions. Nakshatra, Dosha analysis included.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+              </div>
+              <h3>Family Dashboard</h3>
+              <p>Parents & guardians get secure access to shortlist, communicate, and approve — family involvement made seamless.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+              </div>
+              <h3>Privacy First</h3>
+              <p>Photos stay blurred until mutual interest. Phone/email shared only after both families approve. GDPR & DPDP compliant.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <h3>Regional & Cultural Match</h3>
+              <p>Filter by mother tongue, gotra, sub-caste, food habits, and lifestyle. 28 states, 500+ communities covered.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+              </div>
+              <h3>Dedicated Relationship Manager</h3>
+              <p>Premium members get a personal matchmaker — human guidance for shortlisting, introductions, and family meetings.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================= SERVICES ======================= -->
+      <section class="services" id="services" aria-labelledby="services-title">
+        <div class="container">
+          <header class="section-header">
+            <h2 id="services-title" class="section-title">Matrimony Services</h2>
+            <p class="section-subtitle">Choose the plan that fits your journey</p>
+          </header>
+          <div class="services-grid">
+            <article class="service-card">
+              <div class="service-badge">Free</div>
+              <h3>Basic Register</h3>
+              <div class="service-price"><span class="price">₹0</span><span class="period">/lifetime</span></div>
+              <ul class="service-features">
+                <li>✓ Create basic profile</li>
+                <li>✓ Browse limited profiles</li>
+                <li>✓ Express interest (3/day)</li>
+                <li>✓ Basic search filters</li>
+                <li>�- Photo privacy controls</li>
+                <li>�- Kundali matching</li>
+              </ul>
+              <a href="#register" class="btn btn-outline btn-block" data-nav="register">Get Started</a>
+            </article>
+            <article class="service-card featured">
+              <div class="service-badge popular">Most Popular</div>
+              <h3>Premium Match</h3>
+              <div class="service-price"><span class="price">₹9,999</span><span class="period">/year</span></div>
+              <ul class="service-features">
+                <li>✓ Unlimited profile views</li>
+                <li>✓ Unlimited interest & chat</li>
+                <li>✓ Photo privacy controls</li>
+                <li>✓ Full Kundali matching (36 guna)</li>
+                <li>✓ Family dashboard access</li>
+                <li>✓ Dedicated relationship manager</li>
+                <li>✓ Priority in search results</li>
+                <li>✓ Horoscope analysis</li>
+              </ul>
+              <a href="#register" class="btn btn-primary btn-block" data-nav="register">Choose Premium</a>
+            </article>
+            <article class="service-card">
+              <div class="service-badge">Elite</div>
+              <h3>Royal Matrimony</h3>
+              <div class="service-price"><span class="price">₹49,999</span><span class="period">/year</span></div>
+              <ul class="service-features">
+                <li>✓ All Premium features</li>
+                <li>✓ Personal matchmaker (1:1)</li>
+                <li>✓ Offline family meetings arranged</li>
+                <li>✓ Background verification</li>
+                <li>✓ Legal & financial advisory</li>
+                <li>✓ Wedding planning concierge</li>
+                <li>✓ NRI/Global profile access</li>
+                <li>✓ 24/7 priority support</li>
+              </ul>
+              <a href="#contact" class="btn btn-gold btn-block" data-nav="contact">Enquire Now</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================= HOW IT WORKS ======================= -->
+      <section class="how-it-works" id="guidelines" aria-labelledby="how-title">
+        <div class="container">
+          <header class="section-header">
+            <h2 id="how-title" class="section-title">How Vivaha Works</h2>
+            <p class="section-subtitle">Your journey to a lifelong bond in 4 steps</p>
+          </header>
+          <div class="steps">
+            <article class="step">
+              <div class="step-number">
+                <span>1</span>
+                <div class="step-ring"></div>
+              </div>
+              <h3>Create Your Profile</h3>
+              <p>Register with basic details. Add photos, education, career, family background, and partner preferences. Aadhaar verification optional but recommended.</p>
+            </article>
+            <article class="step">
+              <div class="step-number">
+                <span>2</span>
+                <div class="step-ring"></div>
+              </div>
+              <h3>Verify & Enhance</h3>
+              <p>Complete Aadhaar + PAN verification. Add birth details for Kundali. Upgrade to Premium for photo privacy, family dashboard, and Kundali matching.</p>
+            </article>
+            <article class="step">
+              <div class="step-number">
+                <span>3</span>
+                <div class="step-ring"></div>
+              </div>
+              <h3>Discover Matches</h3>
+              <p>Browse verified profiles with advanced filters. Express interest. Families can view, shortlist, and communicate through secure dashboard.</p>
+            </article>
+            <article class="step">
+              <div class="step-number">
+                <span>4</span>
+                <div class="step-ring"></div>
+              </div>
+              <h3>Connect & Commit</h3>
+              <p>Mutual interest unlocks contact. Family meetings arranged. Kundali matching done. Relationship manager guides you to the wedding day.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================= SUCCESS STORIES ======================= -->
+      <section class="success-stories" id="success" aria-labelledby="success-title">
+        <div class="container">
+          <header class="section-header">
+            <h2 id="success-title" class="section-title">Success Stories</h2>
+            <p class="section-subtitle">Real couples, real blessings</p>
+          </header>
+          <div class="stories-grid" id="storiesGrid">
+            <!-- JS will populate -->
+          </div>
+          <div class="stories-cta">
+            <a href="#success" class="btn btn-outline btn-lg">Read All Stories</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================= CTA ======================= -->
+      <section class="cta-section" aria-labelledby="cta-title">
+        <div class="cta-bg" aria-hidden="true"></div>
+        <div class="container">
+          <div class="cta-content">
+            <h2 id="cta-title" class="cta-title">Ready to Begin Your Journey?</h2>
+            <p class="cta-subtitle">Join 125,000+ verified members who trust Vivaha for their most important life decision.</p>
+            <div class="cta-buttons">
+              <a href="#register" class="btn btn-primary btn-lg" data-nav="register">Create Free Profile</a>
+              <a href="#contact" class="btn btn-gold btn-lg" data-nav="contact">Speak to an Advisor</a>
+            </div>
+            <div class="cta-trust">
+              <p>✓ No hidden charges &nbsp;•&nbsp; ✓ Cancel anytime &nbsp;•&nbsp; ✓ 100% data security</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================= FOOTER ======================= -->
+      <footer class="footer" id="contact" role="contentinfo">
+        <div class="footer-grid">
+            <div class="footer-brand">
+              <a href="#home" class="footer-logo">
+                <svg viewBox="0 0 48 48" width="40" height="40" aria-hidden="true">
+                  <defs><linearGradient id="footerGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#D4A843"/><stop offset="100%" stop-color="#B8860B"/></linearGradient></defs>
+                  <circle cx="24" cy="24" r="22" fill="url(#footerGrad)" opacity="0.15"/>
+                  <path fill="none" stroke="url(#footerGrad)" stroke-width="2.5" stroke-linecap="round" d="M14 24c0-6.6 5.4-12 12-12s12 5.4 12 12"/>
+                  <circle cx="24" cy="24" r="3" fill="url(#footerGrad)"/>
+                </svg>
+                <span>Vivaha</span>
+              </a>
+              <p class="footer-tagline">विवाह — Where traditions meet trust</p>
+              <p class="footer-desc">India's premium matrimony platform combining traditional values with modern technology. Verified profiles, astrological matching, and family-involved matchmaking.</p>
+              <div class="footer-social">
+                <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="18" cy="6" r="1"/></svg></a>
+                <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M23.498 6.186a3 3 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3 3 0 0 0 .502 6.186C.043 7.351 0 12 0 12s.043 4.649.502 5.814a3 3 0 0 0 2.122 2.136c1.871.505 9.377.505 9.377.505s7.505 0 9.377-.505a3 3 0 0 0 2.122-2.136C23.957 16.651 24 12 24 12s-.043-4.649-.502-5.814z"/><path d="M10 15l5.5-3.5-5.5-3.5z"/></svg></a>
+                <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.52 3.48A11.77 11.77 0 0012 0C5.37 0 0 5.37 0 12c0 1.66.36 3.22 1 4.67L0 23l5.89-1.56a11.5 11.5 0 004.22 1.07C18.63 24 24 18.63 24 12c0-6.63-5.37-12-12-12-.96 0-1.9.11-2.79.33z"/><path d="M18 11l-4 4-2-2"/></svg></a>
+              </div>
+            </div>
+            <nav class="footer-nav" aria-label="Footer navigation">
+              <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="#home">Home</a>
+                <a href="#search">Find Matches</a>
+                <a href="#register">Register</a>
+                <a href="#services">Services</a>
+                <a href="#success">Success Stories</a>
+              </div>
+              <div class="footer-col">
+                <h4>Our Services</h4>
+                <a href="#services">Free Register</a>
+                <a href="#services">Premium Match</a>
+                <a href="#services">Royal Matrimony</a>
+                <a href="#guidelines">How It Works</a>
+                <a href="#guidelines">Family Dashboard</a>
+              </div>
+              <div class="footer-col">
+                <h4>Communities</h4>
+                <a href="#search">Hindu</a>
+                <a href="#search">Muslim</a>
+                <a href="#search">Christian</a>
+                <a href="#search">Sikh</a>
+                <a href="#search">Jain</a>
+                <a href="#search">Interfaith</a>
+                <a href="#search">NRI / Global</a>
+              </div>
+              <div class="footer-col">
+                <h4>Support</h4>
+                <a href="#">FAQs</a>
+                <a href="#">Safety Tips</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Refund Policy</a>
+                <a href="#">DPDP Compliance</a>
+              </div>
+            </nav>
+            <div class="footer-contact">
+              <h4>Contact Us</h4>
+              <address>
+                <p><strong>Vivaha Matrimony Pvt. Ltd.</strong></p>
+                <p>Unit 402, 4th Floor, Tower B</p>
+                <p>World Trade Center, Nauroji Nagar</p>
+                <p>New Delhi 110029, India</p>
+                <p class="contact-item"><a href="tel:+919800000000">📞 +91 9800000000</a></p>
+                <p class="contact-item"><a href="mailto:care@vivaha.in">✉️ care@vivaha.in</a></p>
+                <p class="contact-item"><a href="https://wa.me/919800000000">💬 WhatsApp: +91 9800000000</a></p>
+              </address>
+            </div>
+          <div class="footer-bottom">
+            <div class="footer-legal">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+              <a href="#">Refund Policy</a>
+              <a href="#">Safety Guidelines</a>
+              <a href="#">DPDP Compliance</a>
+            </div>
+            <p class="copyright">© 2025 Vivaha Matrimony Pvt. Ltd. CIN: U74999DL2015PTC123456. All rights reserved.</p>
+            <p class="copyright-small">Registered Office: Unit 402, World Trade Center, Nauroji Nagar, New Delhi 110029</p>
+          </div>
+      </footer>
+    </main>
+
+    <!-- ======================= INSTALL PROMPT ======================= -->
+    <div class="install-banner" id="installBanner" hidden role="dialog" aria-labelledby="install-title">
+      <div class="install-content">
+        <svg class="install-icon" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 18l5-5-5-5M12 19V9"/></svg>
+        <div class="install-text">
+          <h4 id="install-title">Install Vivaha</h4>
+          <p>Add to home screen for instant access — works offline too.</p>
+        </div>
+        <div class="install-actions">
+          <button class="btn btn-ghost btn-sm" id="installDismiss">Not Now</button>
+          <button class="btn btn-primary btn-sm" id="installAccept">Install</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================= OFFLINE BANNER ======================= -->
+    <div class="offline-banner" id="offlineBanner" hidden>You're offline — cached content available</div>
+
+    <!-- ======================= TOASTS ======================= -->
+    <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+  </div>
+
+  <script src="js/app.js"></script>
+  <script>
+    // Register Service Worker
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js')
+          .then(reg => console.log('SW registered:', reg.scope))
+          .catch(err => console.log('SW registration failed:', err));
+      });
+    }
+  </script>
+</body>
+</html>
